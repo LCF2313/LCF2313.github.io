@@ -2,65 +2,79 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smooth Style Irons</title>
-    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/icon.png">
+    <link rel="stylesheet" href="fontawesome/all.min.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@300&display=swap"
-        rel="stylesheet">
 </head>
 
-<body id="landing">
-
-    <div id="container">
-        <div class="nav-container">
-            <header>
-
-                <a href="index.html"><img class="logo" src="images/logo.png" alt="Smooth Style Irons logo"></a>
-            </header>
-
-            <nav id="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="faqs.html">FAQS</a></li>
-                    <li><a href="media.html">Media</a></li>
-                    <li><a href="specials.html">Specials</a></li>
-                    <li><a href="teams.html">Teams</a></li>
-                    <li><a href="training.html">Training</a></li>
-                </ul>
-            </nav>
-
-        </div>
-        <div id="hero" class="tablet-desktop">
-            <img class="banner" src="images/clothes banner.jpg" alt="clothes">
-        </div>
-
-        <main>
-
-            <div class="Welcome">
-                <div class="welcome-container">
-                    <h2>Welcome to Our Clothes Iron Store</h2>
-                    <p>
-                        Explore our range of high-quality clothes irons designed to make your ironing tasks easier and more
-                        efficient. Whether you need a basic iron for everyday use or a more advanced model with steam and
-                        temperature control features, we have the perfect solution for you.
-                    </p>
-                    <p>
-                        Our irons are built to deliver reliable performance, ensuring your clothes are wrinkle-free and
-                        ready to wear. Browse our selection, read product details, and make a purchase today.
-                    </p>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo.png" alt="logo"></a>
                 </div>
-
-                <footer class="landing-footer">
-                    <p>&copy; Copyright 2021. All Rights Reserved.</p>
-                    <p><a href="mailto: smoothstyleiron@club.net"> smoothstyleiron@club.net</a></p>
-                    <p>Jonathan Titus Sam - C0917579</p>
-                </footer>
-
+                <nav>
+                    <ul id="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                        <li><a href="faqs.html">FAQS</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="products.html">Specials</a></li>
+                        <li><a href="Teams.html">Teams</a></li>
+                        <li><a href="Traning.html">Training</a></li>
+                    </ul>
+                </nav>
+                <img src="./images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
             </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Effortless Style,<br> Wrinkle-Free Confidence Await!</h1>
+                    <P>Explore our range of high-quality clothes irons designed to make your ironing tasks easier and more efficient. Whether you need a basic iron for everyday use or a more advanced model with steam and temperature control features, we have the perfect solution for you.</P>
+                    <a class="btn" href="products.html">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="./images/main.png">
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">  
+                </div>
+                <div class="footer-col-2">
+                    <img src="./images/logo-white.png">
+                    <p>Our Purpose Is To Sustainability Make the Pleasure and Benefits of Accessible to the Many.</p>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; Copyright 2023. All Rights Reserved.
+                <br> Request information<br>C0917579 JONATHAN TITUS SAM</p>
+        </div>
+    </div>
+
+    <!-- Js for toggle menu -->
+    <script>
+        var menuItems = document.getElementById("menu-items");
+        menuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "250px"
+            }
+            else {
+                menuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
 </body>
 
 </html>

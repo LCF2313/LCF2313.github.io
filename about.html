@@ -2,75 +2,88 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smooth Style Irons</title>
-    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/icon.png">
+    <link rel="stylesheet" href="fontawesome/all.min.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@300&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
-
-    <div id="container">
-        <div class="nav-container">
-            <header>
-
-                <a href="index.html"><img class="logo" src="images/logo.png" alt="Smooth Style Irons logo"></a>
-            </header>
-
-            <nav id="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="faqs.html">FAQS</a></li>
-                    <li><a href="media.html">Media</a></li>
-                    <li><a href="specials.html">Specials</a></li>
-                    <li><a href="teams.html">Teams</a></li>
-                    <li><a href="training.html">Training</a></li>
-                </ul>
-            </nav>
-
-        </div>
-
-        <div id="hero" class="tablet-desktop">
-            <img class="banner" src="images/clothes banner.jpg" alt="clothes">
-        </div>
-
-        <main>
-
-
-            <div class="Welcome">
-                <div class="welcome-container">
-                    <h2>Our Story</h2>
-                    <p>
-                        At Smooth Iron, we have been in the business of providing high-quality clothes irons for over a
-                        decade. Our journey began with a passion for making the chore of ironing as efficient and
-                        effective as possible.
-                    </p>
-                    <p>
-                        We believe that the right iron can make a significant difference in your daily life. That's why
-                        we have dedicated ourselves to sourcing and delivering irons that meet the highest standards of
-                        quality and performance.
-                    </p>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo.png" alt="logo"></a>
+                </div>
+                <nav>
+                    <ul id="menu-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                        <li><a href="faqs.html">FAQS</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="products.html">Specials</a></li>
+                        <li><a href="Teams.html">Teams</a></li>
+                        <li><a href="Traning.html">Training</a></li>
+                    </ul>
+                </nav>
+                <img src="./images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+            </div>
+                <!-- Exclusive Offer -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img class="offer-img" src="./images/exclusive.png">
+                </div>
+                <div class="col-2">
+                    <h1>Our Story</h1>
+                    <small>At Smooth Iron, we have been in the business of providing high-quality clothes irons for over a decade. Our journey began with a passion for making the chore of ironing as efficient and effective as possible.
+                         We believe that the right iron can make a significant difference in your daily life. That's why we have dedicated ourselves to sourcing and delivering irons that meet the highest standards of quality and performance.</small>
                     <br>
-                    <h2>Our Mission</h2>
-                    <p>
-                        Our mission is to simplify and improve the ironing experience for our customers. We are
-                        committed to offering a range of irons that not only eliminate wrinkles with precision but also
-                        provide ease of use, durability, and innovative features.
-                    </p>
-
+                    <h1>Our Mission</h1>
+                    <small>Our mission is to simplify and improve the ironing experience for our customers. We are committed to offering a range of irons that not only eliminate wrinkles with precision but also provide ease of use, durability, and innovative features.</small>
                 </div>
-                <div>
-                    <footer class="landing-footer">
-                        <p>&copy; Copyright 2021. All Rights Reserved.</p>
-                        <p><a href="mailto: smoothstyleiron@club.net"> smoothstyleiron@club.net</a></p>
-                        <p>Jonathan Titus Sam - C0917579</p>
-                    </footer>
-                </div>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">  
+                </div>
+                <div class="footer-col-2">
+                    <img src="./images/logo-white.png">
+                    <p>Our Purpose Is To Sustainability Make the Pleasure and Benefits of Accessible to the Many.</p>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; Copyright 2023. All Rights Reserved.
+                <br> Request information<br>C0917579 JONATHAN TITUS SAM</p>
+        </div>
+    </div>
+    
+    <!-- Js for toggle menu -->
+    <script>
+        var menuItems = document.getElementById("menu-items");
+        menuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "250px"
+            }
+            else {
+                menuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
 </body>
 
 </html>
